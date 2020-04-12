@@ -1,0 +1,87 @@
+Módulo02 - HTML e Web
+
+HyperText Markup Language(Linguagem de Marcação de HiperText)
+
+Então, para que você possa criar páginas web, apresentaremos a você uma
+das Linguagens de marcação mais conhecidas - HTML e que utiliza um formato
+simples  de código, que pode ser gerado sem a ajuda de aplicativos especiais.
+
+Para criar um documento HTML, tudo o que você precisa é de um editor de texto
+ASCII como o NotePad(Bloco de Notas), por exemplo.Se você precisar verificar
+a formatação durante a criação, pode usar qualquer navegador, pois todos eles
+são capazes de interpretar o código.
+
+Vantagens do uso do HTML
+
+1- Criar e adicionar facilmente documentos a web, devido ao seu formato 
+simples.
+2- Assegurar a acessibilidade das suas páginas web por um grande número de 
+plataformas e navegadores.
+3- Transmitir facilmente documentos pela internet.
+
+O papel do HTML na web
+
+O HTML tem uma função importante em aplicações web, que são programas que você
+incorporam em sites para gerenciar tarefas adicionais como por exemplo, o 
+gerenciamento de pedidos de usuários. As aplicações web aumentam a interação do 
+usuário na web.
+
+Quando você entra com alguma informação em uma página web, o navegador a envia
+para um conjunto especial de programas chamados Common Gateway interface(CGI)
+scripts. Estes programas processam a informação e exibem o resultado no 
+navegador segundos após.
+
+Você usa o HTML para fornecer a interface básica para a interação com aplicações
+web. Você pode também usar o HTML para cirar interfaces gráficas entre os bancos 
+de dados usados nestas aplicações e o usuário final.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
