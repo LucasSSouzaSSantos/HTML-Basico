@@ -1,0 +1,117 @@
+HTML Básico
+Módulo 01 - Introdução
+
+www - world wide web
+O que é home page
+Os principais protocolos e suas funções
+URL - Sistema de endereçamento
+
+A internet é uma rede mundial de computadores que permite 
+ao usuário obter informações e se comunicar com pessoas do
+mundo todo.
+
+Já a intranet é uma rede privada que permite ao usuário 
+interagir com pessoas de uma mesma organização.
+
+A World Wide Web é um sistema de informação que une dados
+de vários serviços de internet.
+
+Enquanto a internet refere-se aos componentes físicos da global,a
+web refere-se ao corpo da informação compartilhada por esta rede,
+ou seja, às páginas web de um site.
+
+Site - Coleção de páginas web relacionadas entre si
+Browsers(navegadores): são usado para acessar os sites
+    - Google Chrome
+    - Internet Explorer e
+    - Mozilla Firefox
+
+O que é uma home page: é a primeira página recebida de um site por
+um servidor web.
+
+Uma home page é nomalmente chamada de index.html ou de dafault.html.
+Os arquivos também podem possuir a extensão .html como padão.
+
+protocolos: São um conjuntoo de regras para a comunicação em rede. Eles
+determinam como computadores se comunicam: como iniciar, como manter e como
+encerrar a comunicação.
+
+HTTP(Hyper Text Transfer Protocol) é o protocolo usado pelos servidores web
+para transmitir documentos HTML pela internet.
+
+File Transfer Protocol(FTP) é outro protocolo muito utilizado para transferir
+arquivos, porém sua interface gráfica não é tão agradável como o HTTP
+
+Transfer Control Protocol(TCP) é um conjunto de protocolos ara a transmissão
+de informação pela web, com função de verificar se os dados são transferidos
+de forma correta, na sequência apropriada e sem erros.
+
+Internet Protocol(IP) é um conjunto de endereçamento, que fornece o endereco
+dos computadores na rede.
+
+
+URL - sistema de endereçamento
+Universal Resource Locator(URL) é o sistema de endereçamento usado pelos 
+navegadores para localizar redes, computadores e arquivos na internet
+
+http:// www.ev.org.br/Paginas/Home.aspx
+
+http:// - Protocolo HTTP
+Protocolo a ser usado para acessar o arquivo.
+
+www.ev.org.br - Endereço do servidor
+
+/Paginas/ - Subárea: Área do servidor onde se encontra o arquivo.
+
+Home.aspx - Nome do arquivo: Nome do arquivo no servidor
+
+Linguagem de marcação
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
