@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript - aula 1</title>
+
+	<script type="text/javascript" language="javascript">
+		// No javaScript não é necessário indicar qual o tipo da variável.
+		var Variavel_Do_Tipo_String= "Lucas";		 // Essa variável será do tipo string, pois uma string foi passada para ela.
+		var Variavel_Do_Tipo_Inteiro = 10; // Essa é do tipo inteiro
+
+
+		document.write("<span style='color: #ff0000; font-size: 30px;'>Aula 1 de JavaScript</span><br>"); 	
+		// O comando documento.write precisa ter um parâmetro passado dentro dos parênteses.
+		// O JavaScript não formata, para isso, tem que ser usado o HTML.
+		// A tag span não quebra a linha, para isso, foi usado o <br>
+		document.write("<span style='color: #ff0000; font-size: 30px;'>Olá seja bem vindo: " + Variavel_Do_Tipo_String +".</span><br>");
+
+		alert("Olá seja bem vindo " + Variavel_Do_Tipo_String)
+		// O método alert é uma caixa de texto
+
+		var idade;					// variável do tipo inteiro: vai armazenar a idade do usuário.
+		var AnoNascimento = 1992;
+		var anoAtual = 2020;			// variável do tipo inteiro: vai armazenar o ano de nascimento do usuário.
+
+		idade = anoAtual - AnoNascimento;
+
+		document.write("<span style='color: #00ff00; font-size:40px; border: 1px solid #0000ff; '>Idade: "+ idade +"</span><br>")
+
+	</script>
+</head>
+<body>
+
+
+</body>
+</html>

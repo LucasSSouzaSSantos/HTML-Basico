@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formulário</title>
+	<style type="text/css">
+		body{
+			background-color: #FFD700;
+
+		}
+		h1{
+			color: #0000ff;
+			font-weight: bold;
+			font-family: Arial;
+		}
+		ul{
+			color: #0000ff;
+			font-weight: bold;
+			font-family: Arial;
+		}
+		ol{
+			color: #0000ff;
+			font-weight: bold;
+			font-family: Arial;
+		}
+		#corpo{
+			width: 1200px;
+			position: absolute;
+			top: 50px
+			left: 50px;
+			background-color: #00ff00;
+			margin: 50px;
+			padding: 10px;
+		}
+		label{
+			color: #ffffff;
+			font-weight: bold;
+		}
+		.bt{
+			background-color: #7B68EE;
+			color: #ffffff;
+			width: 75px;
+			height: 25px;
+			border: 0px;
+			cursor: pointer;
+		}
+		input:hover, select:hover, textarea:hover{
+			border:2px solid #0000ff;
+		}
+		input:focus, select:focus, textarea:focus{
+			background-color: #ff8000;
+		}
+
+
+	</style>
+
+</head>
+<body>
+	<div id="corpo">
+
+	<h1>Parâmetros dentro da tag form: </h1>
+	<ul>
+		<li>Name - Nome do Formulário
+		<li>Metrod - Método de passagem dos dados
+			<ol>
+				<li>GET  - método não tão discreto, pois mostra os dados na barra de passagem
+				<li>POST - método mais discreto, pois não mostra os dados na barra de passagem
+			</ol>
+		<li>action - nessa configuração eu informo quem irá receber os dados.
+
+	</ul>
+
+	<h1>tags usadas dentro da tag form</h1>
+	<ul>
+		<li>Label: Nome para indentificar
+		<li>input:
+			<ol>
+				<li>type: Informa o tipo de dado que vai ser passado
+				<li>name: O nome dessa tag
+				<li>size: O tamanho da caixa de texto
+				<li>maxlength: A quantidade máxima de caractere que vai poder ser digitado.
+			</ol>
+
+	</ul>
+	<form name="F_Aula" method="get" action="recebe.html">
+			<label>Nome: </label><br/>
+			<input type="text" name="F_Nome" size="40" maxlength="30" /><br/>
+			<label>Senha:</label><br/>
+			<input type="password" name="F_Senha" size="40" maxlength="20"><br/><br>
+			<label>Qual esporte você pratica? </label><br>
+			<input type="checkbox" name="F_Futebol" value="futebol"/><label>Futebol</label><br/>
+			<input type="checkbox" name="F_Natacao" value="natacao"/><label>Natação</label><br/>
+			<input type="checkbox" name="F_Basquete" value="basquete" /><label>Basquete</label><br><br>
+			<label>Possui veículo? </label><br>
+			<input type="radio" name="F_Veiculo" value="s"/><label>Sim</label><br>
+			<input type="radio" name="F_Veiculo" value="N"/><label>Não</label><br><br>
+
+			<label>Estado: </label><br>
+			<select name="F_Estado">
+				<option value="MG">Minas Gerais</option><br>
+				<option value="RJ">Rio de Janeiro</option><br>
+				<option value="SP">São Paulo</option><br>
+				<option value="Es">Espirito Santo</option><br><br>
+			</select><br><br>
+			<label>Comentário</label><br>
+			<textarea name="F_Comentario" cols="45" rows="5"></textarea><br><br>
+
+			
+			<input type="submit" name="" value="Enviar" class="bt">
+			<input type="reset" name="" value="Limpar" class="bt">
+			<input type="button" name="" value="Nao Acao" class="bt"><br><br>
+
+
+
+
+
+	
+	</form>
+</div>
+
+</body>
+</html> 
