@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript" language="javascript">
+		function abrePagina(link){
+				window.location.href = link;
+
+		}
+		/*
+			O objetivo dessa aula é criar um lista com alguns nomes, aonde esses nomes serão link para outras páginas.
+
+			Foi usado a tag option, dentro da tag select, para criar a lista de nome. Dentro da tag option, no parâmetro value, foi colocado a url de cada página. Dentro de option e barra option é colocado um identificador para aonde a página será deslocada.
+
+			Foi criado uma função com o nome, abrePagina, recebendo um parâmetro, chamado link. Esse parâmetro é que irá receber os endereço de destino. No selecte é passado o endereço através do value de cada option, através do parâmetro onchange. Dentro da função foi usado o comando window.location.href, que recebeu o valor do parâmetro da função.
+
+			O programa rodou facilmente e cada endereço foi acessado corretamento pela função, deixando o projeto funcional e sem nenhum erro.
+
+		*/
+
+
+	</script>
+</head>
+<body>
+
+	<select name="bebidas" size="4" onchange="abrePagina(value)">
+		
+		<option value="aula1.html" >Refrigerante</option>
+		<option value="aula2.html" >Cerveja</option>
+		<option value="aula3.html" >Vinho</option>
+		<option value="aula4.html" >Água</option>
+	</select>
+
+</body>
+</html>
