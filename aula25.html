@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aula 8 - javascripting</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" language="javascript">
+		var data = new Date();
+		var meses = new Array();
+		var diaDaSemana = new Array();
+
+		meses[0]  = "Janeiro";
+		meses[1]  =  "Fevereiro";
+		meses[2]  =  "Março";
+		meses[3]  = "Abril";
+		meses[4]  = "Maio";
+		meses[5]  = "Junho";
+		meses[6]  = "Julho"; 
+		meses[7]  = "Agosto";
+		meses[8]  = "Setembro"; 
+		meses[9]  = "Outubro"; 
+		meses[10] = "Novembro"; 
+		meses[11] = "Dezembro";
+
+		diaDaSemana[0] = "Domingo";
+		diaDaSemana[1] =  "Segunda-Feira"; 
+		diaDaSemana[2] = "Terça-Feira"; 
+		diaDaSemana[3] = "Quarta-Feira"; 
+		diaDaSemana[4] = "Quinta-Feira"; 
+		diaDaSemana[5] = "Sexta-Feira"; 
+		diaDaSemana[6] = "Sábado"
+
+		diaDoMes = data.getDate();  // data
+		diaDaSem = data.getDay();  // dia
+		mes = data.getMonth();  // mês
+		ano = data.getFullYear(); // ano atual
+
+		/*
+			Os métodos getDate(), getDay(), geMonth(), getFullYear() retorna um número 0 ou diaDoMes - 1
+			dia da semama 		 mes do ano 			retorno
+				Domingo				Janeiro					0
+
+		*/
+
+		document.write(data.getDate() + "<br>");
+		document.write(data.getDay() + "<br>");
+		document.write(data.getMonth() + "<br>");
+		document.write(data.getFullYear() + "<br>");
+
+
+		document.write(diaDaSemana[data.getDay()] + ", " + data.getDate() + " de " + meses[data.getMonth()] + " de " + data.getFullYear() + ".<br>");
+
+		function movRel(){
+			// métodos para chamar a hora, minutos e segundos
+		var tempo = new Date();
+		var hora = tempo.getHours();
+		var min = tempo.getMinutes();
+		var seg = tempo.getSeconds();
+
+		if(hora < 10){
+			hora = "0"+tempo.getHours();
+		}
+		if(min < 10){
+			min = "0" + tempo.getMinutes();
+		}
+		if(seg < 10){
+			seg = "0" + tempo.getSeconds();
+		}
+
+		var impHoras = hora + ":" + min + ":" + seg;
+
+		document.fre1.rel.value = impHoras;
+
+		setTimeout("movRel()",1000);
+		}
+
+	</script>
+</head>
+<body onload="movRel()">
+	<form name="fre1">
+		<input type="text" name="rel" size="10">
+		
+
+	</form>
+
+</body>
+</html>
