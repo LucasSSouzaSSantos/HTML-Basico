@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript" language="javascript">
+		function validar(){
+			// Eu preciso verificar campo por campo para ver se todos estão preenxidos.
+
+			if(document.cad.fnome.value == ""){
+				alert("Campo nome não pode ser vazio");
+				document.cad.fnome.focus();
+				return false;
+			}
+			if(document.cad.fsenha.value == ""){
+				alert("Campo senha não pode estar em branco.");
+				document.cad.fsenha.focus();
+				return false;
+			}
+			if(document.cad.ftel.value == ""){
+				alert("Digite o telefone");
+				document.cad.ftel.focus();
+				return false;
+			}
+
+		}
+
+		function mudaCor(obj, tipo){
+			// Entrada onFocus
+			if(tipo == 1){
+				obj.style.backgroundColor="#ff0000";
+				obj.style.color="#ffffff";
+
+			}
+			else{ // Saída onBlur
+				obj.style.backgroundColor="#ffffff";
+				obj.style.color="#000000";
+
+			}
+		}
+
+
+	</script>
+</head>
+<body>
+	<form name="cad" onsubmit="return validar()">
+
+	<label>Nome:</label><br>
+	<input type="text" name="fnome" size="50" onfocus="mudaCor(this, 1)" onblur="mudaCor(this, 0)"><br><br>
+
+	<label>Senha:</label><br>
+	<input type="password" name="fsenha" size="10" onfocus="mudaCor(this, 1)" onblur="mudaCor(this, 0)"><br><br>
+
+	<label>Telefone:</label><br>
+	<input type="text" name="ftel" size="15" onfocus="mudaCor(this, 1)" onblur="mudaCor(this, 0)"><br><br>
+
+	<input type="submit" value="Enviar">
+
+	</form><br><br>
+
+</body>
+</html>
