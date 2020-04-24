@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Imagem de Sobreposição</title>
+    <script language="JavaScript">
+        function preload(){
+            imgs= Array('../_Fotos/foto1.jpg','../_Fotos/foto2.jpg','../_Fotos/foto3.jpg');
+            imgQtde=imgs.length;
+            for(i = 0; i < imgQde; i++){
+                var preloadimg = new Image();
+                preloadimg.src = imgs[i];
+                }
+        }
+        function troca(obj, imgTroca){
+            obj.src=imgTroca;
+            }
+    </script>
+</head>
+<body onload="">
+    <h1>Imagem de Sobreposição</h1>
+    <img src="../_Fotos/foto2.jpg" id="bt1" onmouseover="troca(this, '../_Fotos/foto4.jpg')" onmouseout="troca(this, '../_Fotos/foto2.jpg')" width="200">
+
+    <img src="../_Fotos/foto1.jpg" width="200" onmouseover="troca(this, '../_Fotos/foto5.jpg')" onmouseout="troca(this, '../_Fotos/foto1.jpg')">
+    <img src="../_Fotos/foto3.jpg" width="200" onmouseover="troca(this, '../_Fotos/foto6.jpg')" onmouseout="troca(this, '../_Fotos/foto3.jpg')" >
+
+    <img src="../_Fotos/foto4.jpg" width="200" >
+
+</body>
+</html>
