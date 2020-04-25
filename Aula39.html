@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 39: SlideShow - Troca automática</title>
+    <script language="JavaScript">
+
+        function iniciaSlider()
+        {
+            max = 6;
+            min = 1;
+            fi = min;
+            tr = true;
+            carregaFoto("../_Fotos/foto1.jpg");
+            tmr = setInterval(trocaFoto, 10000);
+
+        }
+
+        function carregaFoto(foto)
+        {
+            document.getElementById("moldura").style.backgroundImage = "URL("+foto+")";
+
+        }
+        function trocaFoto()
+        {
+            fi++;
+            if(fi > max)
+            {
+                fi = min;
+            }
+            carregaFoto("../_Fotos/foto"+fi+".jpg");
+        }
+
+        function prox()
+        {
+                clearInterval(tmr);
+                fi++;
+                if(fi > max)
+                {
+                    fi = min;
+                }
+             carregaFoto("../_Fotos/foto"+fi+".jpg");
+             tmr = setInterval(trocaFoto, 10000);
+        }
+
+        function ant()
+        {
+                clearInterval(tmr);
+                fi--;
+                if(fi < min)
+                {
+                    fi = max;
+                }
+               carregaFoto("../_Fotos/foto"+fi+".jpg");
+               tmr = setInterval(trocaFoto, 10000);
+        }
+
+    </script>
+
+    <style>
+        #moldura
+        {
+               width: 600px;
+               height: 400px;
+               background-color: #eeeeee;
+               transition: background-image 1s;
+        }
+
+    </style>
+
+</head>
+<body onload="iniciaSlider()">
+
+    <div id="moldura"></div>
+        <input type="button" value="Anterior" onclick="ant()">
+        <input type="button" value="Proximo" onclick="prox()">
+
+
+</body>
+</html>
